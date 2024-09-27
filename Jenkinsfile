@@ -36,8 +36,8 @@ pipeline {
       stage ('Deploy') {
             steps {
                 sh '''#!/bin/bash
-                <enter your code here>
-                '''
+		ssh -i /home/ubuntu/.ssh/workload4key.pem ubuntu@10.0.50.132 "source ./setup.sh"
+		'''
             }
         }
     }
