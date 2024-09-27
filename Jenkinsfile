@@ -4,8 +4,14 @@ pipeline {
         stage ('Build') {
             steps {
                 sh '''#!/bin/bash
-                <enter your code here>
-                '''
+                python3.9 -m venv venv
+                source venv/bin/activate
+		export FLASK_APP=microblog.py
+                pip install -r requirements.txt
+                pip install gunicorn pymysql cryptography
+		flask translate compile
+                flask db upgrade
+		'''
             }
         }
         stage ('Test') {
