@@ -1,6 +1,6 @@
 # Workload 4
 
-In this workload we will be dialing in our security, while also making the application more effective and secure. In this workload
+In this workload we will be dialing in our security, while also making the application more effective and secure. This workload focuses on building and configuring a custom server infrastructure using AWS services, specifically setting up a Virtual Private Cloud (VPC) with multiple subnets to host and deploy a web application. 
 
 Clone application repository to your own repository
 
